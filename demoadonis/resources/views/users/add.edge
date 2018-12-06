@@ -1,0 +1,17 @@
+  <form method="POST" action="{{ route('UserController.store') }}">
+
+          {{csrfField()}}
+          <div>
+            <input type="text" name="username" />
+          </div>
+          
+          <div>
+            <input type="text" name="email" />
+          </div>
+
+          <div>
+            <input type="text" name="password" />
+          </div>
+
+          <button type="submit"> Submit </button>
+     </form>
